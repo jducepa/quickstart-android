@@ -47,9 +47,9 @@ class MainActivity : AppCompatActivity() {
         // [END handle_data_extras]
 
         binding.subscribeButton.setOnClickListener {
-            Log.d(TAG, "Subscribing to weather topic")
+            Log.d(TAG, "Subscribing to access topic")
             // [START subscribe_topics]
-            Firebase.messaging.subscribeToTopic("weather")
+            Firebase.messaging.subscribeToTopic("access")
                     .addOnCompleteListener { task ->
                         var msg = getString(R.string.msg_subscribed)
                         if (!task.isSuccessful) {

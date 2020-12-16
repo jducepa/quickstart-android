@@ -73,9 +73,9 @@ public class MainActivity extends AppCompatActivity {
         binding.subscribeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "Subscribing to weather topic");
+                Log.d(TAG, "Subscribing to access topic");
                 // [START subscribe_topics]
-                FirebaseMessaging.getInstance().subscribeToTopic("weather")
+                FirebaseMessaging.getInstance().subscribeToTopic("access")
                         .addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
